@@ -277,6 +277,172 @@
 	.logo img {
 	  width: 100px;
 	}
+	      .bubble {
+    bottom: 0!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+.bg-contrast {
+    background-color: #fff!important;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.bubble:first-child {
+   left: 22%;
+    animation: bubble-v 15.8s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(2) {
+    left: 32%;
+    animation: bubble-v 21.7s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(3) {
+    left: 44%;
+    animation: bubble-v 28.8s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(4) {
+    left: 71%;
+    animation: bubble-v 19.8s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(5) {
+    left: 50%;
+    animation: bubble-v 19.5s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(6) {
+    left: 5%;
+    animation: bubble-v 22.7s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(7) {
+    left: 70%;
+    animation: bubble-v 27.5s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(8) {
+    left: 38%;
+    animation: bubble-v 23s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(9) {
+    left: 80%;
+    animation: bubble-v 19.4s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(10) {
+    left: 32%;
+    animation: bubble-v 18.2s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(11) {
+    left: 4%;
+    animation: bubble-v 16.4s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(12) {
+    left: 48%;
+    animation: bubble-v 17.8s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(13) {
+    left: 50%;
+    animation: bubble-v 19.2s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(14) {
+    left: 7%;
+    animation: bubble-v 12.2s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(15) {
+    left: 90%;
+    animation: bubble-v 19.8s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+.bubble:nth-child(16) {
+    left: 64%;
+    animation: bubble-v 20.6s linear infinite,shake-v 2s ease-in-out infinite alternate;
+}
+
+.icon-sm {
+    width: .85rem;
+    height: .85rem
+}
+
+.icon-md {
+    width: 2rem;
+    height: 2rem
+}
+
+.icon-lg {
+    width: 3.25rem;
+    height: 3.25rem
+}
+
+.icon-xl {
+    width: 4.5rem;
+    height: 4.5rem
+}
+
+.icon-xxl {
+    width: 6.5rem;
+    height: 6.5rem
+}
+
+@keyframes bubble-v {
+    0% {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(-640px)
+    }
+}
+
+@keyframes bubble-v-left {
+    0% {
+        margin-bottom: 0;
+        opacity: .1
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    to {
+        margin-bottom: 640px;
+        opacity: 1;
+        left: 0
+    }
+}
+
+@keyframes bubble-v-right {
+    0% {
+        margin-bottom: 0;
+        opacity: .1
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    to {
+        margin-bottom: 640px;
+        opacity: 1;
+        left: 100%
+    }
+}
+@keyframes shake-v {
+    0% {
+        margin-left: 0
+    }
+
+    to {
+        margin-left: 20px
+    }
+}
       </style>
   </head>
   <body>
@@ -288,6 +454,56 @@
     </audio>
 	  
     <div class="contain">
+        <div class="bubbles-wrapper">
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xl">
+	    	<img src="https://5studios.net/laravel/laapp/img/demo/header/apx.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xxl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/bs.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-md">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/cordova.svg" alt="" class="img-responsive">
+            </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-lg">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/css.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/fa.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xxl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/html.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-lg">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/js.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xxl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/npm.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/sass.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-lg">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/apx.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-md">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/bs.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xxl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/cordova.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/css.svg" alt="" class="img-responsive">
+            </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-xxl">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/fa.svg" alt="" class="img-responsive">
+            </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-md">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/html.svg" alt="" class="img-responsive">
+	    </div>
+	    <div class="bubble bg-contrast rounded-circle p-2 shadow icon icon-lg">
+	        <img src="https://5studios.net/laravel/laapp/img/demo/header/js.svg" alt="" class="img-responsive">
+	    </div>
+         </div>
     <h2 class="title-top">🍻 Drink or Win 🏆</h2>
     <div class="cube" style="transform: rotateX(-715deg) rotateY(2155deg) rotateZ(0deg);">
         <div class="face face-1 d-flex justify-content-center">
