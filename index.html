@@ -913,11 +913,26 @@
           align-items: center;
 	          background: radial-gradient(circle,#4b9677 0,#18543b 50%);
       }
+	.contain .cube {
+         z-index: 1111;
+	}
+	.titlet-top {
+	  position: absolute;
+	  top: 0;
+	  color: white;
+	}
+	.logo {
+	  position: absolute;
+	  bottom: 40px;
+	}
+	.logo img {
+	  width: 100px;
+	}
       </style>
   </head>
   <body>
     <div class="contain">
-
+    <h2 class="titlet-top">Drink or Win</h2>
     <div class="cube" style="transform: rotateX(-715deg) rotateY(2155deg) rotateZ(0deg);">
         <div class="face face-1 d-flex justify-content-center">
             <span class="dot dot-1 align-self-center"></span>
@@ -967,6 +982,9 @@
             </div>
         </div>
         </div>
+	<div class="logo">
+      	     <img src="https://lh3.googleusercontent.com/proxy/sUJtIZ0U9LUK_A1QqHI1oxgx6h_GlJ_DodqMgAdujNza_lonnW172tGxjGYYQet0fUkGSCmmuBK21PHbBTU"/>
+    	</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
