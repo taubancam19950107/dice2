@@ -996,6 +996,7 @@ $(document).ready(function() {
         zoom = $('body').width() / $('.face').width();
     }
     zoom = zoom - 4;
+	console.log(zoom);
     $('.cube').css('zoom', zoom);
     $('.cube').css('margin-left', -($('.face').width())/2  + 'px');
     $('.cube').css('margin-top', -($('.face').height())/2  + 'px');
