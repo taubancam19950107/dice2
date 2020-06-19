@@ -379,9 +379,11 @@ function pauseAudioEnd() {
     if (window.mobileCheck()) {
        $('.title-top').css('zoom', zoom-4);
        $('.logo').css('zoom', zoom-3);
-    }	
+       $('.cube').css('zoom', zoom);
+    } else {
+       $('.cube').css('zoom', zoom - 2);
+    }
 
-    $('.cube').css('zoom', zoom);
     $('.cube').css('margin-left', -($('.face').width())/2  + 'px');
     $('.cube').css('margin-top', -($('.face').height())/2  + 'px');
 
