@@ -1015,7 +1015,7 @@ function pauseAudio() {
     }
     zoom = zoom - 4;
 	console.log(zoom);
-    if (window.mobileCheck) {
+    if (window.mobileCheck()) {
        $('.title-top').css('zoom', zoom-4);
        $('.logo').css('zoom', zoom-3);
     }	
