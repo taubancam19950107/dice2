@@ -590,9 +590,9 @@ function pauseAudioEnd() {
   audioEnd.pause(); 
 } 
 		console.log($('body').width(), $('.face').width());
-    var zoom = $('body').height() / $('.face').height();
+    var cubeZoom = zoom = $('body').height() / $('.face').height();
     if ($('body').width() < $('body').height()) {
-        zoom = $('body').width() / $('.face').width();
+        cubeZoom = zoom = $('body').width() / $('.face').width();
     }
     zoom = zoom - 4;
 	console.log(zoom);
@@ -601,7 +601,7 @@ function pauseAudioEnd() {
        $('.logo').css('zoom', zoom-3);
        $('.cube').css('zoom', zoom);
     } else {
-       $('.cube').css('zoom', zoom - 2);
+       $('.cube').css('zoom', cubeZoom/2);
     }
 
     $('.cube').css('margin-left', -($('.face').width())/2  + 'px');
