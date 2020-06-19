@@ -934,6 +934,10 @@
     <audio id="myAudio">
         <source src="https://d1490khl9dq1ow.cloudfront.net/audio/sfx/mp3preview/BsTwCwBHBjzwub4i4/rolling-tin-can-on-wooden-surface_GJOhFSE__NWM.mp3" type="audio/mpeg">
     </audio>
+    <audio id="myAudio-end">
+        <source src="https://qsnn.xspin.vn/mp3s/sm-spin.mp3" type="audio/mpeg">
+    </audio>
+	  
     <div class="contain">
     <h2 class="title-top">Drink or Win</h2>
     <div class="cube" style="transform: rotateX(-715deg) rotateY(2155deg) rotateZ(0deg);">
@@ -999,6 +1003,7 @@ window.mobileCheck = function() {
 	    
 $(document).ready(function() {
 	var audio = document.getElementById("myAudio"); 
+	var audioEnd = document.getElementById("myAudio"); 
 
 function playAudio() { 
   audio.play(); 
@@ -1007,7 +1012,14 @@ function playAudio() {
 function pauseAudio() { 
   audio.pause(); 
 } 
-	
+
+function playAudioEnd() { 
+  audioEnd.play(); 
+} 
+
+function pauseAudioEnd() { 
+  audioEnd.pause(); 
+} 
 		console.log($('body').width(), $('.face').width());
     var zoom = $('body').height() / $('.face').height();
     if ($('body').width() < $('body').height()) {
@@ -1064,6 +1076,12 @@ function pauseAudio() {
                 (l = []),
                 setTimeout(function () {
 		    pauseAudio();
+		    setTimeout(function() {
+		        playAudioEnd();
+			setTimeout(function() {
+			     pauseAudioEnd();
+		    	}, 1500);
+		    }, 100);
                     $("#roll").attr("disabled", !1);
                 }, 1e3 * r),
                     $(".cube").each(function () {
